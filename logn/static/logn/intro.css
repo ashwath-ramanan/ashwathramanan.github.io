@@ -1,0 +1,47 @@
+#center{
+	border: 2px solid black;
+	text-align: center;
+	margin: 100px 50px;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background-image: url("https://i.redd.it/pmvech6x0g2z.png");
+	width: 100%;
+     height: auto;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover; 
+     background-size: 100% 100%;
+
+     background-repeat: no-repeat;
+     background-position: center center; 
+
+
+}
+body{
+	background: #44A08D;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #093637, #44A08D);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #093637, #44A08D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+#center2{
+
+	border: 2px solid black;
+	text-align: center;
+	margin: 100px 50px;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background-image: url("https://i.imgur.com/41lfBVy.jpg");
+	width: 100%;
+     height: auto;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover; 
+     background-size: 100% 100%;
+
+     background-repeat: no-repeat;
+     background-position: center center; 
+
+
+}

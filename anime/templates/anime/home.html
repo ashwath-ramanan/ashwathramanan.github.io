@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Achnologia</title>
+  {% load staticfiles %}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="{% static 'anime/bmutube.css' %}"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+</head>
+<body>
+
+      
+      <!-- NAV BAR -->
+<nav  class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark "  >
+  <a class="navbar-brand" href="/main" style="color: white;">ACHNOLOGIA</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      
+  
+    </ul>
+    
+     
+        </div>
+</nav>
+
+      <!-- End of Nav BAr -->
+
+
+
+
+<!-- SLIDING PAGES -->
+
+<div class="w3-content w3-section" style="max-width:100%;">
+  <img class="mySlides" src="http://andriasang.com/con1sc/naruto_generations_shipments/images/23orw/full.jpg" style="width:100%;max-height:400px;padding: 0px;margin-top: 50px">
+  <img class="mySlides" src="https://i.ytimg.com/vi/yTmpEs6heRQ/maxresdefault.jpg" style="width:100%;max-height:400px;padding: 0px;margin-top: 50px">
+  <img class="mySlides" src="http://www.kartonista.com/wp-content/uploads/2011/09/roy-mustang-hawkeye.jpg" style="width:100%;max-height:400px;padding: 0px;margin-top: 50px">
+   <img class="mySlides" src="http://wfiles.brothersoft.com/o/one-piece-wallpaper_116033-1280x720.jpg" style="width:100%;max-height:400px;padding: 0px;margin-top: 50px">
+   <img class="mySlides" src="https://static.zerochan.net/Natsu.Dragneel.full.1268757.jpg" style="width:100%;max-height:400px;padding: 0px;margin-top: 50px">
+
+</div>
+
+
+
+
+<!--  END SLIDING PAGES-->
+
+
+
+
+<!-- MOVIE BLOCKS -->
+
+ <div class="row">
+    <div class="col-3">
+      <div class="vertical-menu">
+  <a href="/main" class="active">Home</a>
+  <a href="/tvshows">TV Series</a>
+  <a href="http://naruto.wikia.com/wiki/Narutopedia">Narutopedia</a>
+  <a href="http://tokyoghoul.wikia.com/wiki/Tokyo_Ghoul_Wiki">Tokyo Ghoul</a>
+  <a href="http://onepiece.wikia.com/wiki/One_Piece_Wiki">One Piece</a>
+  
+</div>
+    </div>
+
+
+    <div class="col">
+      <div class="row">
+        {% for anim in all_anime %}
+
+      <div class="col-lg-4 col-sm-6">
+<a href="/anime/arcs/{{ anim.id }}">
+        <div class="thumbnail">
+          <div class="containerrr">
+
+          <img src="{{ anim.link1 }}" alt="{{anim.title}}" class="image" style="width:100%"">
+          <div class="middle">
+          <div class="text">{{anim.title}}</div>
+
+          </div>
+          </div>
+        </div>
+      </div></a>
+      {% endfor %}
+
+
+     
+    
+ 
+
+
+<!-- End Movie blocks-->
+
+
+ 
+
+
+
+<!-- SCRIPT DETAILS-->
+
+<script type="text/javascript" src="{% static 'anime/js/bmutube.js' %}"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+</body>
+</html>

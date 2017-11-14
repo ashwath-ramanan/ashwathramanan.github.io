@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login page for Video straming</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="D:\django\python-django-full-stack-part-1\resources\Django-Python-Full-Stack-Web-Devloper-master\CSS_Level_One\style" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'anime/style.css' %}">
+    <style>
+      body{
+  background: #ADA996;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+    </style>
+</head>
+<body class="login">
+<!-- header starts here -->
+<div id="stbar" style="background-color: #051733" >
+<div id="stframe">
+<div id="logo">
+	<span class="gb_Za gb_Xa" style="background-image:url('https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAApmAAAAJDc1NjMyNTU1LTY1Y2EtNGY0Yy1iOTVmLTNkMGMwY2U0YWNhMA.jpg alpha=1&service=google_white');background-size:contain;max-width:144px;max-height:60px">
+		
+    <a href="http://BMUTUBE.info">BMUTUBE</a>
+     </div>
+ <div id="header-main-right">
+ <div id="header-main-right-nav">
+ 	<form method="post" action="{% url 'logn:index'%}" id="login_form" name="login_form" enctype="multipart/form-data">
+        {% csrf_token %}
+          <table border="0" style="border:none">
+            <tr>
+              <td ><input type="text" tabindex="1"  id="email" placeholder="Email or Phone" name="email" class="inputtext radius1" value=""></td>
+              <td ><input type="password" tabindex="2" id="pass" placeholder="Password" name="pass" class="inputtext radius1" ></td>
+              <td ><input type="submit" class="fbbutton" name="login" value="Login"/>></a></td>
+            </tr>
+            
+          </table>
+           {% csrf_token %}
+        </form>
+      
+ </div>
+ </div>
+  </div>
+    </div>
+    <!-- header starts here -->
+    <div class="loginbox radius">
+  <h2 style="color:#141823; text-align:center;">Welcome to BMUTUBE</h2>
+  <div class="loginboxinner radius">
+    <div class="loginheader">
+      <h4 class="title">Stream the unlimited videos</h4>
+  </div>
+  <!--loginheader-->
+    <div class="loginform">
+      <form id="login" action="" method="post">
+        <p>
+          <input type="text" id="firstname" name="firstname" placeholder="First Name" value="" class="radius mini" />
+          
+        </p>
+        <p>
+          <input type="text" id="email" name="email" placeholder="Your Email" value="" class="radius" />
+        </p>
+        <p>
+          <input type="text" id="remail" name="remail" placeholder="Re-enter Email" class="radius" />
+        </p>
+        <p>
+          <input type="password" id="password" name="password" placeholder="New Password" class="radius" />
+        </p>
+        <p>
+          <button class="radius title" name="signup" href= "#">Sign Up for BMUTUBE </button>
+        </p>
+      </form>
+    </div>
+    <!--loginform-->
+  </div>
+  <!--loginboxinner-->
+</div>
+<!--loginbox-->
+
+</body>
+</html>

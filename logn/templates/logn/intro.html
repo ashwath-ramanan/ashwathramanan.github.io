@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Introduction</title>
+  {% load staticfiles %}
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="{% static 'logn/intro.css' %}">
+</head>
+<body>
+      <!-- NAV BAR -->
+<nav  class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark "  >
+  <a class="navbar-brand" href="/main" style="color: white;">ACHNOLOGIA</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      
+    
+    </ul>
+    
+     
+        </div>
+</nav>
+
+      <!-- End of Nav BAr -->
+
+
+
+
+ <div class="row">
+    <div class="col">
+        <div id="center">
+        <strong><p style="font-size: 100px">ANIME</p></strong>
+        <a href="{% url 'anime:home' %}" class="btn btn-lg btn-primary">WATCH ANIME</a>
+        </div>
+    </div>
+    <div class="col">
+      <div id="center2">
+        <strong><p style="font-size: 100px">SHOWS</p></strong>
+        <a href="{% url 'tvshows:home' %}" class="btn btn-lg btn-primary">WATCH SHOWS</a>
+        </div>
+    </div>
+  </div>
+
+</body>
+</html>
